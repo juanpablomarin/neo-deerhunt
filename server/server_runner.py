@@ -32,7 +32,7 @@ if not args.verbose:
     conn2.settimeout(3)
 p2 = ClientConnection(conn2, 'p2', args.verbose)
 
-file_name = 'maps/{}'.format(random.choice(os.listdir('maps')))
+file_name = '../maps/first.map'
 
 game = GridFighters(p1, p2, open(file_name, 'r'))
 
